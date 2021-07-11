@@ -1,66 +1,102 @@
 <template>
-  <section class="container">
-    <div>
-      <app-logo/>
-      <h1 class="title">
-        nuxt-15puzzle-app
-      </h1>
-      <h2 class="subtitle">
-        Nuxt.js project
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green">Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey">GitHub</a>
+  <section>
+    <p class="title tx_black" id="fifpuzzle">15パズル</p>
+    <div class="text tx_black" id="desc">15パズルは、<br>ブロックをスライドさせて<br>この形にするゲームです。</div>
+    <a href="play.html">
+      <div class="black button" id="startbutton">
+        <div class="bt_text tx_white text">始める</div>
       </div>
-      <NuxtLink to="/home">Home page</NuxtLink>
+    </a>
+    <div id="base">
+      <div class="gray frout_black frame" id="right">
+        <div class="container">
+          <div class="block blue">
+            <div class="text tx_white bl_text bold">1</div>
+          </div>
+          <div class="block blue">
+            <div class="text tx_white bl_text bold">2</div>
+          </div>
+          <div class="block blue">
+            <div class="text tx_white bl_text bold">3</div>
+          </div>
+          <div class="block blue">
+            <div class="text tx_white bl_text bold">4</div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="block orange">
+            <div class="text tx_white bl_text bold">5</div>
+          </div>
+          <div class="block orange">
+            <div class="text tx_white bl_text bold">6</div>
+          </div>
+          <div class="block orange">
+            <div class="text tx_white bl_text bold">7</div>
+          </div>
+          <div class="block orange">
+            <div class="text tx_white bl_text bold">8</div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="block yellow">
+            <div class="text tx_white bl_text bold">9</div>
+          </div>
+          <div class="block yellow">
+            <div class="text tx_white bl_text bold">10</div>
+          </div>
+          <div class="block yellow">
+            <div class="text tx_white bl_text bold">11</div>
+          </div>
+          <div class="block yellow">
+            <div class="text tx_white bl_text bold">12</div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="block green">
+            <div class="text tx_white bl_text bold">13</div>
+          </div>
+          <div class="block green">
+            <div class="text tx_white bl_text bold">14</div>
+          </div>
+          <div class="block green">
+            <div class="text tx_white bl_text bold">15</div>
+          </div>
+          <div class="block">
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 </template>
 
-<script>
-import AppLogo from '~/components/AppLogo.vue'
-
-export default {
-  components: {
-    AppLogo
-  }
-}
-</script>
-
 <style>
-.container {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+#fifpuzzle {
+  position: absolute;
+  top: 150px;
+  left: 102.75px;
 }
 
-.title {
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
+#desc {
+  position: absolute;
+  top: 300px;
+  left: 102.75px;
 }
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
+#startbutton {
+  position: absolute;
+  top: 560px;
+  left: 102.75px;
 }
 
-.links {
-  padding-top: 15px;
+#right {
+  position: absolute;
+  top: 50%;
+  left: 693px;
+  position: absolute;
+  transform: translate(0, -50%);
+  box-sizing: content-box;
 }
 </style>
-
