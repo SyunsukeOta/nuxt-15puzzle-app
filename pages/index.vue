@@ -2,11 +2,11 @@
   <section>
     <p class="title tx_black" id="fifpuzzle">15パズル</p>
     <div class="text tx_black" id="desc">15パズルは、<br>ブロックをスライドさせて<br>この形にするゲームです。</div>
-    <a href="play.html">
+    <nuxt-link to="play">
       <div class="black button" id="startbutton">
         <div class="bt_text tx_white text">始める</div>
       </div>
-    </a>
+    </nuxt-link>
     <div id="base">
       <div class="gray frout_black frame" id="right">
         <div class="container">
@@ -97,6 +97,5 @@
   left: 693px;
   position: absolute;
   transform: translate(0, -50%);
-  box-sizing: content-box;
 }
 </style>
