@@ -40,6 +40,9 @@ module.exports = {
     '@/assets/css/button.css',
     '@/assets/css/color.css',
     '@/assets/css/frame.css',
-    '@/assets/css/text.css'
+    '@/assets/css/text.css',
+    '@/assets/css/play.css',
+    '@/assets/css/home.css',
+    '@/assets/css/result.css'
   ]
 }
