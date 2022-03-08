@@ -71,3 +71,12 @@
     </div>
   </section>
 </template>
+<script>
+export default {
+  head: {
+    bodyAttrs: {
+      class: 'white'
+    }
+  }
+}
+</script>
