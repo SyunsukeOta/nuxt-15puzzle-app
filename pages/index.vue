@@ -7,7 +7,7 @@
         <div class="bt_text tx_white text">始める</div>
       </div>
     </nuxt-link>
-    <div id="base">
+    <div>
       <div class="gray frout_black frame" id="right">
         <div class="container">
           <div class="block blue">
